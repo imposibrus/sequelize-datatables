@@ -30,6 +30,7 @@ describe('DtBuilder Ordering', function() {
     });
   });
 });
+
 describe('DtBuilder Search', function() {
   context('The builder gets a search field in the request', function () {
     it('should return a params object with Sequelize where options', function () {
@@ -52,6 +53,7 @@ describe('DtBuilder Search', function() {
     });
   });
 });
+
 describe('DtBuilder Pagination', function() {
   context('The builder gets a start and length parameter in the request', function () {
     it('should return a params object with Sequelize offset and limit options', function () {
@@ -74,6 +76,7 @@ describe('DtBuilder Pagination', function() {
     });
   });
 });
+
 describe('DtBuilder calls Model findAndCountAll', function(){
   context('get result is called on the builder', function(){
       it('Should call on the model findAndCountAll and using a promise return the result', function(){
